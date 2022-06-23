@@ -77,7 +77,7 @@ function consumption() {
   async function request() {
     try {
       let res = await fetch(
-        `http://api.weatherapi.com/v1/current.json?key=${key}&q=${formValue}&aqi=no`
+        `https://api.weatherapi.com/v1/current.json?key=${key}&q=${formValue}&aqi=no`
       );
       let json = await res.json();
       if (!res.ok)
