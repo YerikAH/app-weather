@@ -1,0 +1,296 @@
+.all-content {
+  display: grid;
+  grid-template-areas:
+    "todayTime"
+    "timeStatus";
+  background-color: var(--blue-normal);
+}
+.btn-search {
+  background: var(--button-search);
+  border: none;
+  color: var(--white);
+  font-family: var(--raleway);
+  height: fit-content;
+  padding: 10px 18px;
+}
+.btn-search:hover {
+  background-color: #3c3944;
+  transition: 0.2s;
+}
+.btn-grados {
+  border-radius: 255px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  font-family: var(--raleway);
+  font-weight: 700;
+  border: none;
+  color: var(--white);
+  background: var(--button-search);
+}
+.decoration-image {
+  background-image: url("../images/Cloud-background.png");
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  opacity: 0.05;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top;
+}
+.today-time-btn {
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+.today-time-body-responsive {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*change en media query 710px max-width a 202px*/
+.today-time-body-responsive img {
+  width: 100%;
+  max-width: 170px;
+  height: auto;
+}
+.today-time-dody-info {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.today-time-dody-info h1 {
+  color: var(--blue-letter);
+  font-weight: 500;
+}
+.info-details-today-simb {
+  font-size: 2rem;
+  color: var(--blue-letter);
+}
+.info-details-today-grado {
+  font-weight: 500;
+  font-size: 7rem;
+  color: var(--white);
+}
+
+.today-time {
+  grid-area: todayTime;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 10vh 30vh 30vh 30vh;
+}
+.time-status {
+  grid-area: timeStatus;
+  width: 100vw;
+  height: auto;
+  background-color: var(--blue-dark);
+}
+
+.infoPlaceFooter {
+  margin: 30px;
+}
+.info-place-footer-country {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-datetime-today-footer {
+  margin-left: 30px;
+}
+.info-place-footer-country-name {
+  margin-left: 10px;
+}
+.footer-info-today {
+  text-align: center;
+  color: var(--blue-letter);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.time-status {
+  display: grid;
+  justify-content: center;
+}
+.windy {
+  margin-top: 32px;
+  width: 300px;
+  height: 204px;
+  background-color: var(--blue-normal);
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+.windy h3 {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  font-weight: 500;
+  text-align: center;
+  justify-content: center;
+}
+.wind-status-num {
+  font-size: 4rem;
+  font-weight: 500;
+  color: var(--white);
+}
+.wind-status-mph {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 500;
+}
+.humedity {
+  margin-top: 32px;
+  width: 300px;
+  height: 204px;
+  background-color: var(--blue-normal);
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+.humedity h3 {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  text-align: center;
+  justify-content: center;
+  font-weight: 500;
+}
+.visibility {
+  margin-top: 32px;
+  width: 300px;
+  height: 159px;
+  background-color: var(--blue-normal);
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+.visibility h3 {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  text-align: center;
+  justify-content: center;
+  font-weight: 500;
+}
+.air {
+  margin: 32px 0;
+  width: 300px;
+  height: 159px;
+  background-color: var(--blue-normal);
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+.air h3 {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  font-weight: 500;
+  text-align: center;
+  justify-content: center;
+}
+.visibility-status-num,
+.air-status-num,
+.humidity-status-num {
+  font-size: 4rem;
+  font-weight: 500;
+  color: var(--white);
+}
+.air-status-mb,
+.visibility-status-miles,
+.humidity-status-por {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--white);
+}
+.tittle-time-status {
+  color: var(--white);
+  margin-top: 52px;
+}
+.img-location {
+  width: 14px;
+  height: 19px;
+}
+@media (min-width: 330px) {
+  .windy {
+    width: 328px;
+    height: 204px;
+    background-color: var(--blue-normal);
+  }
+  .humedity {
+    width: 328px;
+    height: 204px;
+    background-color: var(--blue-normal);
+  }
+  .visibility {
+    width: 328px;
+    height: 159px;
+    background-color: var(--blue-normal);
+  }
+  .air {
+    width: 328px;
+    height: 159px;
+    background-color: var(--blue-normal);
+  }
+}
+/*progrees*/
+.progress-humedity {
+  display: flex;
+  justify-content: center;
+}
+/*max is 60%  the value div in 2 after agree in width .progress-color-full*/
+.progress-yellow {
+  width: 30%;
+  position: absolute;
+  height: 8px;
+  background: #ffec65;
+  border-radius: 250px;
+  left: 0;
+  transition: 0.5s;
+}
+.progrees-nothing {
+  width: 229px;
+  height: 8px;
+  background: #e7e7eb;
+  border-radius: 255px;
+  position: relative;
+}
+@media (min-width: 1000px) {
+  .grid-status-all {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    gap: 48px;
+  }
+  .visibility,
+  .air {
+    margin: 0;
+  }
+}
+@media (min-width: 1100px) {
+  .all-content {
+    grid-template-areas: "timeStatus todayTime";
+  }
+  .today-time,
+  .decoration-image,
+  .today-time-body-responsive {
+    width: 30vw;
+  }
+  .time-status {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .title-div-box-status {
+    width: 704px;
+  }
+}

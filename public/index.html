@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Weather app</title>
+  </head>
+  <body>
+    <div class="all-content">
+      <div class="today-time">
+        <div class="decoration-image"></div>
+        <nav class="today-time-btn">
+          <button class="btn-search" id="openSearch">Search for places</button
+          ><button class="btn-grados" id="changeGrade">ºF</button>
+        </nav>
+        <body class="today-time-body">
+          <div class="today-time-body-responsive">
+            <img id="imgWeather" alt="" src="../images/HeavyCloud.png" />
+          </div>
+          <div class="today-time-dody-info">
+            <div class="info-details-today">
+              <span class="info-details-today-grado" id="infoDetailsTodayGrado"
+                >15</span
+              >
+              <span class="uno"></span>
+              <span class="info-details-today-simb" id="infoDetailsTodaySimb"
+                >ºC</span
+              >
+            </div>
+            <h1 id="NameImgWeather">Shower</h1>
+          </div>
+        </body>
+        <footer class="footer-info-today">
+          <div>
+            <span id="infoPlaceFooter">Today</span
+            ><span id="infoPlaceFooterDay" class="info-datetime-today-footer">
+              <span id="dayLetter"></span>
+              <span id="dayNum"></span>
+              <span id="month"></span>
+            </span>
+          </div>
+          <div class="info-place-footer-country">
+            <span>
+              <img
+                class="img-location"
+                src="../images/location.svg"
+                alt="image locate"
+              /> </span
+            ><span
+              id="placeNameFullFooter"
+              class="info-place-footer-country-name"
+              >London</span
+            >
+          </div>
+        </footer>
+      </div>
+      <div class="search" id="searchMenu">
+        <div class="close-search" id="closeSearch">
+          <img src="../images/close-ham.svg" alt="" />
+        </div>
+        <div class="input-img">
+          <div class="search-decorador-input-img">
+            <span><img src="../images/lupa.svg" alt="" /></span>
+            <input
+              type="search"
+              id="searchInput"
+              placeholder="search place location"
+            />
+          </div>
+          <div class="responsive-submit">
+            <input
+              type="submit"
+              class="btn-for-api"
+              id="searchInputSubmit"
+              value="Search"
+            />
+          </div>
+        </div>
+        <div class="errorApi" id="errorApi"></div>
+        <div class="recent-guie">
+          <button id="btnLondon" class="recent-guie-btn">London</button>
+          <button id="btnBarcelona" class="recent-guie-btn">Barcelona</button>
+          <button id="btnLongBeach" class="recent-guie-btn">Long Beach</button>
+        </div>
+      </div>
+      <div class="time-status">
+        <div class="title-div-box-status">
+          <h2 class="tittle-time-status">Today’s Hightlights</h2>
+        </div>
+        <div class="grid-status-all">
+          <div class="windy">
+            <h3>Wind status</h3>
+            <div class="wind-status" id="windStatus">
+              <span class="wind-status-num" id="windStatusNum">7</span>
+              <span class="wind-status-mph">mph</span>
+            </div>
+          </div>
+          <div class="humedity">
+            <h3>Humidity</h3>
+            <div class="humidity-status">
+              <span id="humidityStatuNum" class="humidity-status-num">84</span
+              ><span class="humidity-status-por">%</span>
+            </div>
+            <div class="progress-humedity">
+              <div class="center-humedity">
+                <div class="progrees-nothing">
+                  <div class="progress-yellow"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="visibility">
+            <h3>Visibility</h3>
+            <div class="visibility-status" id="visibilityStatus">
+              <span class="visibility-status-num" id="visibilityStatusNum"
+                >6.4</span
+              >
+              <span class="visibility-status-miles">miles</span>
+            </div>
+          </div>
+          <div class="air">
+            <h3>Air Pressure</h3>
+            <div class="air-status" id="airStatus">
+              <span class="air-status-num" id="airStatusNum">998</span>
+              <span class="air-status-mb">mb</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../src/index.js" type="module"></script>
+  </body>
+</html>

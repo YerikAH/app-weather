@@ -1,0 +1,34 @@
+/* Raleway */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*var*/
+:root {
+  --blue-dark: #100e1d;
+  --blue-normal: #1e213a;
+  --white: #e7e7eb;
+  --blue-letter: #a09fb1;
+  --button-search: #6e707a;
+  --raleway: "Raleway", sans-serif;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+html {
+  font-family: var(--raleway);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  outline: none;
+  cursor: pointer;
+}
